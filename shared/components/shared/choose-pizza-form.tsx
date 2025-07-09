@@ -16,8 +16,8 @@ interface Props {
     name: string;
     ingredients: Ingredient[];
     items: ProductItem[];
-    onSubmit: (itemId: number, ingredients: number[]) => void;
-    onClickAddCart: VoidFunction;
+    onSubmit?: (itemId: number, ingredients: number[]) => void;
+    onClickAddCart?: VoidFunction;
     className?: string;
 }
 
